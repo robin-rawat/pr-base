@@ -1,0 +1,20 @@
+{% extends "account/base.html"%}
+<title>{% block head_title %}AccountSettings{% endblock head_title %}</title>
+
+{%block content%}
+<b>Password Related Settings</b>
+<ul>
+<li><a href='{% url "account_change_password" %}'>Change Password</a></li>
+<li><a href='{% url "account_set_password" %}'>Set Password</a></li>
+<li><a href='{% url "account_reset_password" %}'>Reset Password</a></li>
+</ul>
+<b>e-mail Related Settings</b>
+<ul>
+<li><a href='{% url "account_email" %}'>Manage e-mail</a></li>
+</ul>
+<b>Social Accounts Related Settings</b>
+<ul>
+<li><a href='{% url "socialaccount_connections" %}'>Social Account Management</a></li>
+</ul>
+
+{%endblock%}
